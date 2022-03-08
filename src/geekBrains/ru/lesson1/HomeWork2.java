@@ -21,8 +21,12 @@ public class HomeWork2 {
     }
 
     public static void positiveNegativeNumber(int a){
-        if (a >= 0) System.out.println("Число " + a + " Положительно ");
-        else System.out.println("Число " + a + " Отрицательно");
+        if (a >= 0) {
+            System.out.println("Число " + a + " Положительно ");
+        }
+        else {
+            System.out.println("Число " + a + " Отрицательно");
+        }
     }
 
     // Воспользовался рекомендацией Intellij
