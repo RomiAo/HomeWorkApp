@@ -44,19 +44,14 @@ public class HomeWork_3 {
     }
 
     public static void fillDiagonal() {
-        int[][] arr = { {1, 1},
-                        {2, 2},
-                        {3, 3},
-                        {4, 4}
-                                };
-
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr[i].length; j++) {
-                System.out.print("[" + arr[i][j] + "]");
+        int[][] square = new int[4][4];
+        for (int i = 0; i < 4; i++) {
+            System.out.println("");
+            for (int j = 0; j < 4; j++) {
+                square[i][j] = i+j;
+                System.out.print(square[i][j] + " ");
             }
-            System.out.println();
         }
     }
-
 }
 
