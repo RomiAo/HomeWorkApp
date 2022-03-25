@@ -74,12 +74,12 @@ public class HomeWork_4 {
             for (int j = 0; j < SIZE; j++) {
                 if (MAP[i][j] == symbol) {
                     hor++;
-                } else if (MAP[i][j] != symbol && hor < DOTS_TO_WIN) {
+                } else if (MAP[i][j] != symbol) {
                     hor = 0;
                 }
                 if (MAP[j][i] == symbol) {
                     ver++;
-                } else if (MAP[j][i] != symbol && ver < DOTS_TO_WIN) {
+                } else if (MAP[j][i] != symbol) {
                     ver = 0;
                 }
             }
