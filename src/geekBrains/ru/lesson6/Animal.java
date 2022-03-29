@@ -1,28 +1,15 @@
 package geekBrains.ru.lesson6;
 
-public class Animal implements AnimalInterface {
-    private double animalDistanceRun, animalDistanceSwim;
+abstract class Animal {
+    protected int maxDistanceRun = 0;
+    protected int maxDistanceSwim = 0;
 
-    Animal(double animalDistanceRun, double animalDistanceSwim){
-        this.animalDistanceRun = animalDistanceRun;
-        this.animalDistanceSwim = animalDistanceSwim;
+    public Animal(int maxDistanceRun, int maxDistanceSwim) {
+        this.maxDistanceRun = maxDistanceRun;
+        this.maxDistanceSwim = maxDistanceSwim;
     }
 
-    @Override
-    public boolean run(double value) {
-        return animalDistanceRun > value;
-    }
+    public abstract boolean run(int distance);
+    public abstract boolean swim(int distance);
 
-    @Override
-    public boolean swim(double value) {
-        return animalDistanceSwim > value;
-    }
-
-    public double getAnimalDistanceRun() {
-        return animalDistanceRun;
-    }
-
-    public double getAnimalDistanceSwim() {
-        return animalDistanceSwim;
-    }
 }
