@@ -1,8 +1,8 @@
 package geekBrains.ru.lesson7;
 
 public class Cat {
-    private String name;
-    private int appetite;
+    private final String name;
+    private final int appetite;
     boolean fullness;
 
     public String getName() {
