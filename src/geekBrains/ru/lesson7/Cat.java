@@ -3,7 +3,7 @@ package geekBrains.ru.lesson7;
 public class Cat {
     private final String name;
     private final int appetite;
-    boolean fullness;
+    private boolean fullness;
 
     public String getName() {
         return name;
@@ -15,6 +15,10 @@ public class Cat {
 
     public boolean isFullness() {
         return fullness;
+    }
+
+    public void setFullness(boolean fullness) {
+        this.fullness = fullness;
     }
 
     public Cat(String name, int appetite, boolean fullness) {

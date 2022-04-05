@@ -8,21 +8,21 @@ public class FeedCat {
     public static void main(String[] args) {
         int action;
 
-        Cat[] allCats = new Cat[4];
-        allCats[0] = new Cat("Барсик", 5, false);
-        allCats[1] = new Cat("Мурзик", 25, false);
-        allCats[2] = new Cat("Снежок", 10, false);
-        allCats[3] = new Cat("Пушок", 30, false);
+        Cat[] Cats = new Cat[4];
+        Cats[0] = new Cat("Барсик", 5, false);
+        Cats[1] = new Cat("Мурзик", 25, false);
+        Cats[2] = new Cat("Снежок", 10, false);
+        Cats[3] = new Cat("Пушок", 30, false);
 
         Plate plate = new Plate(50);
         plate.info();
-        for (Cat allCat : allCats) {
-            if (!allCat.isFullness() && allCat.getAppetite() < plate.getFood()) {
-                allCat.eat(plate);
-                allCat.fullness = true;
-                System.out.println("Котик " + allCat.getName() + " покушал!");
+        for (Cat Cat : Cats) {
+            if (!Cat.isFullness() && Cat.getAppetite() < plate.getFood()) {
+                Cat.eat(plate);
+                Cat.setFullness(true);
+                System.out.println("Котик " + Cat.getName() + " покушал!");
             } else {
-                System.out.println("Котик " + allCat.getName() + " не поел!");
+                System.out.println("Котик " + Cat.getName() + " не поел!");
             }
         }
         plate.info();
