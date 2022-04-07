@@ -1,6 +1,4 @@
 package geekBrains.ru.lesson8;
-
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -50,7 +48,6 @@ public class CounterApp extends JFrame {
                 }
                 refreshCounterView(counterView);
             }
-
         };
 
         decrementButton.addActionListener(actionListener);
