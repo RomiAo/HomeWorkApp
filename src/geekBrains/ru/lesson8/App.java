@@ -5,12 +5,12 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class CounterApp extends JFrame {
+public class App extends JFrame {
 
     private int counter = 0;
 
-    public CounterApp() {
-        setTitle("CounterApp window");
+    public App() {
+        setTitle("App window");
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setBounds(500, 500, 250, 120);
 
@@ -66,6 +66,6 @@ public class CounterApp extends JFrame {
     }
 
     public static void main(String[] args) {
-        new CounterApp();
+        new App();
     }
 }
